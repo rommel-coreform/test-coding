@@ -50,13 +50,14 @@ const App = () => {
         <hr className="my-5 h-0.2 bg-slate-300" />
         {pages.map((page) => {
           return (
-            <Input
-              key={page}
-              page={page}
-              checked={checkedPages.includes(page)}
-              disabled={done}
-              handleChangeCheckbox={handleChangeCheckPage}
-            />
+            <div key={page} className="py-1">
+              <Input
+                page={page}
+                checked={checkedPages.includes(page)}
+                disabled={done}
+                handleChangeCheckbox={handleChangeCheckPage}
+              />
+            </div>
           );
         })}
         <hr className="my-5 h-0.2 bg-slate-300" />

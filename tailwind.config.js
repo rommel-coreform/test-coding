@@ -13,6 +13,9 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat"],
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [],
